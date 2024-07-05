@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/hex/dev/theme-starter/_sass/core'
+let g:netrw_dirhist_7='/Users/hex/dev/last-crumb/_js/sections/accordion'
+let g:netrw_dirhist_6='/Users/hex/dev/last-crumb/_sass/core'
+let g:netrw_dirhist_5='/Users/hex/dev/last-crumb/.github/workflows'
+let g:netrw_dirhist_4='/Users/hex/dev/theme-starter/layout'
+let g:netrw_dirhist_3='/Users/hex/dev/tumble/.github/workflows'
+let g:netrw_dirhist_2='/Users/hex/dev/theme-starter/bin'
+let g:netrw_dirhist_1='/Users/hex/dev/docker-shopify-checkout-starter'
+let g:netrw_dirhist_0='/Users/hex/dev/jacob-co/web/src/core/dato/sdk/queries/fragments'
+let g:netrw_dirhist_9='/Users/hex/dev/jacob-co/web/src/core/dato/sdk/queries'
