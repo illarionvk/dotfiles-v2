@@ -72,3 +72,5 @@ function dn() {
 }
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles-v2/ --work-tree=$HOME'
+
+alias vim='nvim'
