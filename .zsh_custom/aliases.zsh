@@ -71,6 +71,31 @@ function dn() {
   mc ${1:-.} $(~/core/fs/fuzzy-folder.sh)
 }
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles-v2/ --work-tree=$HOME'
-
 alias vim='nvim'
+
+#### Dotfiles
+
+DOTFILES="$HOME/dotfiles-v2"
+
+function dtf() {
+  git --git-dir="$DOTFILES" --work-tree="$HOME" "$@"
+}
+alias dotfiles=dtf
+
+function dtfnew() {
+  git clone --bare $1 $DOTFILES
+  dtf branch -m master main
+  dtf config --local status.showUntrackedFiles no
+
+  echo "Please add and commit additional files"
+  echo "using 'dtf add' and 'dtf commit', then run"
+  echo "dtf push -u origin main"
+}
+
+function dtfrestore() {
+  git clone -b base --bare $1 $DOTFILES
+  dtf config --local status.showUntrackedFiles no
+  dtf checkout \
+    || echo 'Deal with conflicting files, then run (possibly with -f flag if you are OK with overwriting)\ndtf checkout'
+}
+
