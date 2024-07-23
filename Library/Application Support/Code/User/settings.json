@@ -54,6 +54,7 @@
     "width": 80
   },
   "dev.containers.defaultExtensions": [
+    "biomejs.biome",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "sleistner.vscode-fileutils"
@@ -163,7 +164,6 @@
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.validate.enable": true,
-  "update.mode": "none",
   "vim.easymotion": false,
   "vim.enableNeovim": true,
   "vim.hlsearch": true,
