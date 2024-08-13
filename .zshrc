@@ -8,26 +8,11 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="bullet-train"
-BULLETTRAIN_GIT_EXTENDED=false
-BULLETTRAIN_NVM_SHOW=false
-BULLETTRAIN_PROMPT_ADD_NEWLINE=false
-BULLETTRAIN_RUBY_SHOW=false
-BULLETTRAIN_VIRTUALENV_SHOW=false
+ZSH_THEME="robbyrussell"
 
-prompt_print_week_number() {
-  prompt_segment cyan black $(date '+W%V')
+print_week_number() {
+  prompt_segment 'cyan' 'black' "$(date '+W%V')"
 }
-
-BULLETTRAIN_PROMPT_ORDER=(
-  time
-  print_week_number
-  status
-  custom
-  dir
-  git
-)
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -125,3 +110,5 @@ export DISABLE_AUTO_TITLE='true'
 if [ -e /Users/hex/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/hex/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(starship init zsh)"
