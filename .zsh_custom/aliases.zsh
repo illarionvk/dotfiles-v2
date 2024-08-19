@@ -32,15 +32,21 @@ alias tree="tree -I 'node_modules|bower_components|Gemfile*' -F --dirsfirst"
 alias mc="mc --nosubshell"
 
 # Activate fzf fuzzy matching
-export FZF_DEFAULT_COMMAND="rg --files --smart-case --glob '!*Library*' --iglob '!*flow-typed*'"
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--reverse'
 
 _fzf_compgen_path() {
-  rg --files --smart-case --glob '!*Library*' "$1"
+  fd --hidden --follow --exclude ".git" . "$1"
 }
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude ".git" . "$1"
+}
+
+# Init fzf
+source <(fzf --zsh)
 
 # Enable smart case in ripgrep by default
 alias rg="rg --smart-case"
