@@ -211,6 +211,10 @@
       "commands": ["editor.action.rename"]
     },
     {
+      "commands": ["editor.action.insertSnippet"],
+      "before": ["<leader>", "r", "s"]
+    },
+    {
       "before": ["<leader>", "q"],
       "commands": ["workbench.action.closeEditorsInGroup"]
     },
@@ -219,12 +223,8 @@
       "before": ["K"]
     },
     {
-      "after": ["g", "h"],
+      "commands": ["editor.action.marker.next"],
       "before": ["<leader>", "e"]
-    },
-    {
-      "after": ["editor.action.marker.next"],
-      "before": ["<leader>", "n", "e"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
