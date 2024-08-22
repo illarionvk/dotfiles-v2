@@ -24,27 +24,8 @@
             ]
           },
           {
-            "description": "Change left_control & right_shift to command+control+option+shift.",
+            "description": "Change right_shift to command+control+option+shift.",
             "manipulators": [
-              {
-                "from": {
-                  "key_code": "left_control",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "right_control",
-                    "modifiers": [
-                      "right_command",
-                      "right_option",
-                      "right_shift"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
               {
                 "from": {
                   "key_code": "right_shift",
