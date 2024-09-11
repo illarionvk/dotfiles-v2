@@ -8,6 +8,9 @@
   "[javascriptreact]": {
     "editor.formatOnSave": true
   },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "[liquid]": {
     "editor.defaultFormatter": "sissel.shopify-liquid"
   },
@@ -250,6 +253,8 @@
   "workbench.editor.labelFormat": "medium",
   "workbench.editor.showTabs": "single",
   "workbench.preferredDarkColorTheme": "Alabaster Dark",
+  "workbench.preferredHighContrastColorTheme": "Alabaster Dark",
+  "workbench.preferredHighContrastLightColorTheme": "Alabaster",
   "workbench.preferredLightColorTheme": "Alabaster",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "right",
