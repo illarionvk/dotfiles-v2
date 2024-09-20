@@ -85,7 +85,7 @@
   "editor.scrollBeyondLastLine": false,
   "editor.stickyScroll.enabled": false,
   "editor.suggestSelection": "first",
-  "editor.tabCompletion": "onlySnippets",
+  "editor.tabCompletion": "off",
   "editor.tabSize": 2,
   "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.wordBasedSuggestionsMode": "allDocuments",
