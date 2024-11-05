@@ -36,4 +36,6 @@ if status is-interactive
   end
 
   abbr --add ai '~/core/dev/aider.sh'
+
+  abbr --add rg 'rg --smart-case'
 end
