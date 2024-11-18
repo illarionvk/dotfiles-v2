@@ -31,11 +31,8 @@ if status is-interactive
 
   alias vim="nvim"
 
-  function timelogs
-    vim -O2 ~/Tresorit/Main/timelog-macbook.txt ~/Tresorit/Main/timelog-imac.txt
-  end
-
-  abbr --add ai '~/core/dev/aider.sh'
-
   abbr --add rg 'rg --smart-case'
 end
+
+set core_config ~/core/dotfiles/config.fish
+test -r $core_config; and source $core_config
