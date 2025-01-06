@@ -38,5 +38,13 @@
     "key": "shift+5",
     "command": "explorer.newFile",
     "when": "explorerViewletFocus && foldersViewVisible && !inputFocus"
+  },
+  {
+    "key": "ctrl+\\ b",
+    "command": "workbench.action.closeSidebar"
+  },
+  {
+    "key": "ctrl+\\ v",
+    "command": "workbench.action.closeAuxiliaryBar"
   }
 ]
