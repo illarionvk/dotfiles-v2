@@ -33,6 +33,7 @@ if status is-interactive
   alias vim="nvim"
 
   abbr --add rg 'rg --smart-case'
+  abbr --add nnn 'nnn -e'
 end
 
 set core_config ~/core/dotfiles/config.fish
