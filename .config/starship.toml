@@ -3,9 +3,6 @@
 add_newline=false
 
 format = """
-[](bg:color_aqua fg:color_aqua)\
-$username\
-[](bg:color_bg3 fg:color_aqua)\
 $directory\
 [](fg:color_bg3 bg:color_bg4)\
 $git_branch\
