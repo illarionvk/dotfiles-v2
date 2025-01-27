@@ -1,7 +1,4 @@
 {
-  "[clojure]": {
-    "editor.defaultFormatter": "betterthantomorrow.calva"
-  },
   "[javascript]": {
     "editor.formatOnSave": true
   },
@@ -10,9 +7,6 @@
   },
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid"
   },
   "[markdown]": {
     "editor.acceptSuggestionOnEnter": "off",
@@ -49,13 +43,6 @@
   },
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "off",
-  "calva.keybindingsEnabled": false,
-  "calva.prettyPrintingOptions": {
-    "enabled": true,
-    "maxLength": 50,
-    "printEngine": "pprint",
-    "width": 80
-  },
   "dev.containers.defaultExtensions": [
     "biomejs.biome",
     "dbaeumer.vscode-eslint",
@@ -71,7 +58,7 @@
   "editor.dragAndDrop": false,
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 12,
   "editor.formatOnSave": false,
   "editor.guides.bracketPairs": "active",
   "editor.insertSpaces": false,
@@ -260,11 +247,5 @@
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 24,
-  "workbench.tree.renderIndentGuides": "always",
-  "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "zenMode.hideActivityBar": false,
-  "zenMode.hideLineNumbers": false,
-  "zenMode.hideStatusBar": false,
-  "zenMode.showTabs": "single"
+  "workbench.tree.renderIndentGuides": "always"
 }
