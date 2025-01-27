@@ -34,7 +34,8 @@
                 },
                 "to": [
                   {
-                    "key_code": "right_shift"
+                    "key_code": "right_shift",
+                    "lazy": true
                   }
                 ],
                 "to_if_alone": [
@@ -45,8 +46,7 @@
                       "left_control",
                       "left_option",
                       "left_shift"
-                    ],
-                    "lazy": true
+                    ]
                   }
                 ]
               }
